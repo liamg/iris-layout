@@ -1,6 +1,6 @@
-# Iris (rev4) Coding Layout
+# Iris (rev4) UK Coding Layout
 
-This is a coding layout for the Iris rev4 keyboard (created with the [QMK configurator](https://config.qmk.fm/#/)).
+This is a UK coding layout for the Iris rev4 keyboard (created with the [QMK configurator](https://config.qmk.fm/#/)).
 
 ## Usage
 
