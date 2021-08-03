@@ -13,7 +13,7 @@ generate: check
 install: generate
 	@echo "Installing layout..."
 	@mkdir -p ~/qmk_firmware/keyboards/keebio/iris/keymaps/liamg
-	@ln -sf ./src/* ~/qmk_firmware/keyboards/keebio/iris/keymaps/liamg
+	@ln -sf `pwd`/src/* ~/qmk_firmware/keyboards/keebio/iris/keymaps/liamg
 	@echo "Layout installed!"
 
 .PHONY: configure
@@ -25,7 +25,7 @@ configure: check
 
 .PHONY: clone
 clone:
-	@[[ -d "$$HOME/qmk_firmware" ]] || git clone https://github.com/qmk/qmk_firmware.git $$HOME/qmk_firmware
+	@[[ -d "$$HOME/qmk_firmware" ]] || (git clone https://github.com/qmk/qmk_firmware.git $$HOME/qmk_firmware && pushd $$HOME/qmk_firmware && make git-submodule && popd)
 
 .PHONY: flash
 flash: clone check install configure
