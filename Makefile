@@ -21,7 +21,7 @@ configure: check
 	@echo "Configuring qmk..."
 	@qmk config user.keymap=liamg
 	@qmk config user.keyboard=keebio/iris/rev4
-	echo "QMK configured."
+	@echo "QMK configured."
 
 .PHONY: clone
 clone:
@@ -31,4 +31,4 @@ clone:
 flash: clone check install configure
 	@echo "Starting flash..."
 	@qmk flash
-	echo "Done!"
+	@echo "Done!"
