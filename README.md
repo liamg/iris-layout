@@ -12,6 +12,8 @@ cd iris-layout
 make flash
 ```
 
+You'll probably need to do the above as root if you have issues.
+
 ## Layers
 
 ### Layer 0: Default
