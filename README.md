@@ -7,7 +7,7 @@ This is a coding layout for the Iris rev4 keyboard (created with the [QMK config
 Reset your board, then:
 
 ```bash
-git clone https://github.com/liamg/iris-layout.git`
+git clone https://github.com/liamg/iris-layout.git
 cd iris-layout
 make flash
 ```
