@@ -4,6 +4,8 @@ This is a UK coding layout for the Iris rev4 keyboard (created with the [QMK con
 
 ## Usage
 
+On Mac, you'll want to set your input language to British (not PC), and set your keyboard as ISO.
+
 Reset your board, then:
 
 ```bash
